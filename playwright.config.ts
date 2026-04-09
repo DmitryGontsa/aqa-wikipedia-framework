@@ -35,23 +35,23 @@ export default defineConfig({
             },
     },
     projects: [
-        // {
-        //     name: 'auth-api-setup',
-        //     testMatch: /.*auth\.api\.setup\.ts/,
-        // },
+        {
+            name: 'auth-api-setup',
+            testMatch: /.*auth\.api\.setup\.ts/,
+        },
         {
             name: 'auth-ui-setup',
             testMatch: /.*auth\.ui\.setup\.ts/,
         },
-        // {
-        //     name: 'wikipedia-ui-tests-with-api-auth_[chromium]',
-        //     use: {
-        //         browserName: 'chromium',
-        //         storageState: AuthStatePath.API,
-        //     },
-        //     dependencies: ['auth-api-setup'],
-        //     testIgnore: /.*auth\.(api|ui)\.setup\.ts/,
-        // },
+        {
+            name: 'wikipedia-ui-tests-with-api-auth_[chromium]',
+            use: {
+                browserName: 'chromium',
+                storageState: AuthStatePath.API,
+            },
+            dependencies: ['auth-api-setup'],
+            testIgnore: /.*auth\.(api|ui)\.setup\.ts/,
+        },
         {
             name: 'wikipedia-ui-tests-with-ui-auth_[chromium]',
             use: {
