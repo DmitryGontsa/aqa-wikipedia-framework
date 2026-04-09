@@ -1,7 +1,7 @@
 # AQA Wikipedia Framework (Playwright + TypeScript + Docker)
 
 <p align="center">
-  <img src="./image.png" alt="AQA Wikipedia Framework banner" width="70%" />
+  <img src="./image.png" alt="AQA Wikipedia Framework banner" width="90%" />
 </p>
 
 <p align="center">
