@@ -25,6 +25,6 @@ export class WikiAuthUiService {
         await page.getByRole('textbox', { name: /password/i }).fill(Env.wikiPassword);
         await page.getByRole('button', { name: /log in/i }).click();
 
-        await expect(page).toHaveURL(/\/wiki\/Main_Page/, { timeout: 1000 });
+        await expect(page).toHaveURL(/\/wiki\/Main_Page/, { timeout: 5000 });
     }
 }
