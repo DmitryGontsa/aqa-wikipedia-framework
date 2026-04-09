@@ -1,0 +1,19 @@
+{
+  "name": "wikipedia-playwright-ts",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:api-auth": "playwright test --project=wikipedia-ui-tests-with-api-auth_[chromium]",
+    "test:ui-auth": "playwright test --project=wikipedia-ui-tests-with-ui-auth_[chromium]",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^22.0.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.6.0"
+  }
+}

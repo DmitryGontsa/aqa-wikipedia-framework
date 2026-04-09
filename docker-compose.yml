@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  wikipedia-tests:
+    build: .
+    container_name: wikipedia-playwright-tests
+    env_file:
+      - .env
+    volumes:
+      - ./playwright-report:/app/playwright-report
+      - ./test-results:/app/test-results
+      - ./playwright/.auth:/app/playwright/.auth
+    command: npx playwright test --project="wikipedia-ui-tests-with-api-auth_[chromium]"
